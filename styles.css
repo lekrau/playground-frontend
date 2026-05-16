@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Matrix Code Green Color Scheme
+    https://www.schemecolor.com/matrix-code-green.php */
+    --vampire-black: rgb(13, 2, 8);
+    --dark-green: rgb(0, 59, 0);
+    --islam-green: rgb(0, 143, 17);
+    --erin: rgb(0, 255, 65); 
+}
+
+body {
+    background-color: var(--vampire-black, black);
+    color: var(--erin, rgb(0, 255, 0));
+    padding: 1rem;
+}
+
+h1 {
+    margin: 2rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+#ulises {
+    height: 360px;
+    max-width: calc(100% - 2rem);
+    margin: 1rem;
+    float: left;
+}
