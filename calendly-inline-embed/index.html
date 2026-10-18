@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendly Inline Embed Test</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <h1>Calendly Inline Embed Test</h1>
     <h2>Calendly Widget</h2>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/leon-s-krause/30min"
-        style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
+    <div class="calendly-container">
+        <!-- Pilot fallback: auto-resize reported 2px in the local browser test.
+             Keep a fixed height and allow Calendly to scroll internally. -->
+        <!-- Calendly inline widget begin -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/leon-s-krause/30min"
+            style="min-width:320px;height:890px;"></div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+        <!-- Calendly inline widget end -->
+    </div>
+    <p><a href="https://calendly.com/leon-s-krause/30min" target="_blank" rel="noopener noreferrer">Terminbuchung direkt bei Calendly öffnen (neuer Tab)</a></p>
 </body>
 
 </html>

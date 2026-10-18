@@ -1,0 +1,22 @@
+body {
+    background-color: yellow;
+    margin: 0;
+    padding: 50px;
+}
+
+.calendly-container {
+    background-color: red;
+    padding: 10px;
+}
+
+.calendly-inline-widget iframe {
+    display: block;
+}
+
+/* Preserve Calendly's 320px minimum width on small screens. */
+@media (max-width: 600px) {
+    body,
+    .calendly-container {
+        padding: 0;
+    }
+}
